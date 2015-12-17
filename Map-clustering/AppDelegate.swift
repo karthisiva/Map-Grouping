@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let vc = ShopViewController()
+        vc.shops = (1...5).map {
+            Shop(name: "Shop \($0)", latitude: 55.9520600, longitude: -3.1964800)
+        }
+        let w = UIWindow(frame: UIScreen.mainScreen().bounds)
+        w.rootViewController = vc
+        w.makeKeyAndVisible()
+        self.window = w
+
         return true
     }
 

@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		52BA43151C21430F00A851A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA43141C21430F00A851A9 /* AppDelegate.swift */; };
-		52BA43171C21430F00A851A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA43161C21430F00A851A9 /* ViewController.swift */; };
 		52BA431A1C21431000A851A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BA43181C21431000A851A9 /* Main.storyboard */; };
 		52BA431C1C21431000A851A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BA431B1C21431000A851A9 /* Assets.xcassets */; };
 		52BA431F1C21431000A851A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BA431D1C21431000A851A9 /* LaunchScreen.storyboard */; };
 		52BA432A1C21431000A851A9 /* Map_clusteringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA43291C21431000A851A9 /* Map_clusteringTests.swift */; };
 		52BA43351C21431000A851A9 /* Map_clusteringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA43341C21431000A851A9 /* Map_clusteringUITests.swift */; };
+		52BA43451C2143CE00A851A9 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA43441C2143CE00A851A9 /* ShopViewController.swift */; };
+		52BA43471C21443700A851A9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BA43461C21443700A851A9 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		52BA43111C21430F00A851A9 /* Map-clustering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Map-clustering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BA43141C21430F00A851A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52BA43161C21430F00A851A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52BA43191C21431000A851A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52BA431B1C21431000A851A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52BA431E1C21431000A851A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		52BA43301C21431000A851A9 /* Map-clusteringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Map-clusteringUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BA43341C21431000A851A9 /* Map_clusteringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_clusteringUITests.swift; sourceTree = "<group>"; };
 		52BA43361C21431000A851A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52BA43441C2143CE00A851A9 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		52BA43461C21443700A851A9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52BA43471C21443700A851A9 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		52BA43081C21430E00A851A9 = {
 			isa = PBXGroup;
 			children = (
+				52BA43461C21443700A851A9 /* MapKit.framework */,
 				52BA43131C21430F00A851A9 /* Map-clustering */,
 				52BA43281C21431000A851A9 /* Map-clusteringTests */,
 				52BA43331C21431000A851A9 /* Map-clusteringUITests */,
@@ -98,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				52BA43141C21430F00A851A9 /* AppDelegate.swift */,
-				52BA43161C21430F00A851A9 /* ViewController.swift */,
+				52BA43441C2143CE00A851A9 /* ShopViewController.swift */,
 				52BA43181C21431000A851A9 /* Main.storyboard */,
 				52BA431B1C21431000A851A9 /* Assets.xcassets */,
 				52BA431D1C21431000A851A9 /* LaunchScreen.storyboard */,
@@ -256,8 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52BA43171C21430F00A851A9 /* ViewController.swift in Sources */,
 				52BA43151C21430F00A851A9 /* AppDelegate.swift in Sources */,
+				52BA43451C2143CE00A851A9 /* ShopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,8 +404,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Map-clustering/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.obs.Map-clustering";
+				PRODUCT_BUNDLE_IDENTIFIER = com.obs.RealFire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -411,8 +416,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Map-clustering/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.obs.Map-clustering";
+				PRODUCT_BUNDLE_IDENTIFIER = com.obs.RealFire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -484,6 +490,7 @@
 				52BA433B1C21431000A851A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52BA433C1C21431000A851A9 /* Build configuration list for PBXNativeTarget "Map-clusteringTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +499,7 @@
 				52BA433E1C21431000A851A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52BA433F1C21431000A851A9 /* Build configuration list for PBXNativeTarget "Map-clusteringUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +508,7 @@
 				52BA43411C21431000A851A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
